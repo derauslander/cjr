@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christopher J. Reid</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Instrument Sans', sans-serif;
+    background: #F6F4F0;
+    color: #1A1A18;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    text-align: center;
+    animation: fade 0.8s ease both;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin-bottom: 40px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .links a {
+    color: #6B6860;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.25s;
+  }
+
+  .links a::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #C4553A;
+    transition: width 0.3s ease;
+  }
+
+  .links a:hover {
+    color: #1A1A18;
+  }
+
+  .links a:hover::after {
+    width: 100%;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Christopher J. Reid</h1>
+    <div class="links">
+      <a href="https://derauslander.com">Sneaker Collection</a>
+      <a href="https://letterboxd.com/derauslander/films/">Letterboxd</a>
+    </div>
+  </div>
+</body>
+</html>
